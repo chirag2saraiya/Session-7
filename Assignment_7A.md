@@ -9,34 +9,40 @@ rout = 1 + (7-1) *1 =6
 
 # 2nd layer - Max pool 3x3 stride =2
 
---jout = 2 * 2 = 4
+jout = 2 * 2 = 4
 
---rout = 6 +(3-1)*2 = 10
+rout = 6 +(3-1)*2 = 10
 
-# 3rd layer - 3x3 stride =1
+# 3rd layer - 3x3 stride = 1
 
-jout = 4 * 1 =4
+jout = 4 * 1 = 4
+
 rout = 10 + (3-1)*1 =12
 
-# 4th layer - 3x3 stride =2
+# 4th layer - 3x3 stride = 2
 
 jout = 4*2 = 8
+
 rout = 12 + (3-1)*2 = 16 
 
 # 5th layer -Inception
 
 -Max pool 3x3 stride =1
  
- jout = 8 * 1 = 8
- rout = 16 + 2 * 1 = 18
+jout = 8 * 1 = 8
+ 
+rout = 16 + 2 * 1 = 18
 
-- 5x5 stride =1
+-5x5 stride =1
 
 jout = 8 * 1 = 8
+
 rout = 16 + 4 * 1 = 20
 
-- 3x3 stride =1 
- jout = 8 * 1 = 8 
+-3x3 stride =1 
+
+ jout = 8 * 1 = 8
+ 
  rout = 16 + 2 *1 = 18  
 
 # 6th Layer - Inception
@@ -44,38 +50,46 @@ rout = 16 + 4 * 1 = 20
 -Max pool 3x3 stride =1
  
  jout = 8 * 1 = 8
- rout = 16 + 2 * 1 = 18
+ 
+ rout = 20 + 2 * 1 = 22
 
 - 5x5 stride =1
 
 jout = 8 * 1 = 8
-rout = 16 + 4 * 1 = 20
 
-- 3x3 stride =1 
- jout = 8 * 1 = 8 
- rout = 16 + 2 *1 = 18  
+rout = 20 + 4 * 1 = 24
+
+- 3x3 stride = 1 
+
+ jout = 8 * 1 = 8
+ 
+ rout = 20 + 2 * 1 = 22
 
 # 7 th -Max pooling 3x3 ,stride =2
 
-jout = 8 *2 =16
+jout = 8 * 2 =16
 
-rout = 20 + (3-1) * 8 = 36
+rout = 24 + (3-1) * 8 = 40
 
 # 8 th layer - Inception 
 
 -Max pool 3x3 stride =1
  
  jout = 16 * 1 = 16
- rout = 36 + 2 * 16 = 68
+ 
+ rout = 40 + 2 * 16 = 72
 
 - 5x5 stride =1
 
 jout = 16 * 1 = 16
-rout = 36 + 4 * 16= 100
+
+rout = 40 + 4 * 16= 104
 
 - 3x3 stride =1 
- jout = 16 * 1 = 16 
- rout = 36 + 2 * 32 = 68  
+
+ jout = 16 * 1 = 16
+ 
+ rout = 40 + 2 * 16 = 72 
 
 
 # 9 th layer - Inception 
@@ -83,7 +97,8 @@ rout = 36 + 4 * 16= 100
 -Max pool 3x3 stride =1
  
  jout = 16 * 1 = 16
- rout = 100 + 2 * 16 = 132
+ 
+ rout = 104 + 2 * 16 = 136
 
 - 5x5 stride =1
 
@@ -91,8 +106,10 @@ jout = 16 * 1 = 16
 rout = 100 + 4 * 16= 164
 
 - 3x3 stride =1 
- jout = 16 * 1 = 16 
- rout = 100 + 2 * 16 = 132
+
+jout = 16 * 1 = 16
+ 
+rout = 104 + 2 * 16 = 136
  
  # 10 th layer - Inception 
 
@@ -100,54 +117,66 @@ rout = 100 + 4 * 16= 164
 -Max pool 3x3 stride =1
  
  jout = 16 * 1 = 16
- rout = 132 + 2 * 16 = 164
+ 
+ rout = 164 + 2 * 16 = 196
 
 - 5x5 stride =1
 
 jout = 16 * 1 = 16
-rout = 132 + 4 * 16= 196
+
+rout = 164 + 4 * 16= 228
 
 - 3x3 stride =1 
- jout = 16 * 1 = 16 
- out = 132 + 2 * 16 = 164
+
+ jout = 16 * 1 = 16
+ 
+ rout = 164 + 2 * 16 = 196
  
  # 11 th layer - Inception 
 
 -Max pool 3x3 stride =1
  
  jout = 16 * 1 = 16
- rout = 196 + 2 * 16 = 228
+ 
+ rout = 228 + 2 * 16 = 260
 
 - 5x5 stride =1
 
 jout = 16 * 1 = 16
-rout = 196 + 4 * 16= 260
+
+rout = 228 + 4 * 16= 292
 
 - 3x3 stride =1 
+
  jout = 16 * 1 = 16 
- out = 196 + 2 * 16 = 228
+ 
+ rout = 228 + 2 * 16 = 260
  
  # 12 th layer - Inception 
 
 -Max pool 3x3 stride =1
  
  jout = 16 * 1 = 16
- rout = 260 + 2 * 16 = 292
+ 
+ rout = 292 + 2 * 16 = 324
 
 - 5x5 stride =1
 
 jout = 16 * 1 = 16
-rout = 260 + 4 * 16= 324
 
-- 3x3 stride =1 
-  jout = 16 * 1 = 16
- rout = 260 + 2 * 16 = 292
+rout = 292 + 4 * 16= 356
+
+- 3x3 stride = 1
+
+ jout = 16 * 1 = 16
+ 
+ rout = 292 + 2 * 16 = 324
  
 # 13th layer 3x3 ,Stride =2
 
 jout = 16 * 2 = 32
 
-rout = 324 + 4 * 16= 388
+rout = 356 + 4 * 16= 420
 
 # 14 th layer - Inception 
 
@@ -155,31 +184,38 @@ rout = 324 + 4 * 16= 388
  
  jout = 32 * 1 = 16
  
- rout = 388 + 2 * 16 = 420
+ rout = 420 + 2 * 16 = 452
 
 - 5x5 stride =1
 
 jout = 32 * 1 = 32
-rout = 388 + 4 * 16= 452
+
+rout = 420 + 4 * 16= 484
 
 - 3x3 stride =1 
-  jout = 32 * 1 = 32
- rout = 388 + 2 * 16 = 420
+
+ jout = 32 * 1 = 16
+ 
+ rout = 420 + 2 * 16 = 452
  
  # 15 th layer - Inception  (Taking Max receptive field from previous layers)
 
 -Max pool 3x3 stride =1
  
  jout = 32 * 1 = 32
- rout = 452 + 2 * 32 = 516
+ 
+ rout = 484 + 2 * 32 = 548
 
 - 5x5 stride =1
 
 jout = 32 * 1 = 32
-rout = 452 + 4 * 32= 580
+
+rout = 548 + 4 * 32= 676
 
 - 3x3 stride =1 
-  jout = 32 * 1 = 32
- rout = 452 + 2 * 32 = 516
+
+jout = 32 * 1 = 32
+ 
+rout = 484 + 2 * 32 = 548
  
  
