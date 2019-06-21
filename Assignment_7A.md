@@ -1,15 +1,17 @@
 jout  =jin *s 
 rout = rin + (k-1)*jin
 
-# 1st layer - 7x7 stride =2
+# 1st layer - 7x7 stride = 2
 
 jout = 1*2 =2
+
 rout = 1 + (7-1) *1 =6
 
 # 2nd layer - Max pool 3x3 stride =2
 
-jout = 2 * 2 = 4
-rout = 6 +(3-1)*2 = 10
+--jout = 2 * 2 = 4
+
+--rout = 6 +(3-1)*2 = 10
 
 # 3rd layer - 3x3 stride =1
 
