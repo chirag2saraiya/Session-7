@@ -2,7 +2,9 @@ jout  =jin *s
 rout = rin + (k-1)*jin
 ### Assumption : 
 1> Taking Max receptive field from previous layers  in Inseption
+
 2> As per diagram shown on page 7, Maxpool in Inseption is 3x3 and Stride = 1 ,so took that value
+
 3> Also considered calculations for Receptive field and Jump
 
 # 1st layer - 7x7 stride = 2
