@@ -144,6 +144,7 @@ rout = 260 + 4 * 16= 324
 # 13th layer 3x3 ,Stride =2
 
 jout = 16 * 2 = 32
+
 rout = 324 + 4 * 16= 388
 
 # 14 th layer - Inception 
@@ -151,6 +152,7 @@ rout = 324 + 4 * 16= 388
 -Max pool 3x3 stride =1
  
  jout = 32 * 1 = 16
+ 
  rout = 388 + 2 * 16 = 420
 
 - 5x5 stride =1
